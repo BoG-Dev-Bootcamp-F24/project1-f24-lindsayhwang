@@ -3,7 +3,7 @@ import '../App.css';
 
 const InfoMovesButton = ({ handleInfo, handleMoves, showInfo }) => {
     return (
-        <div>
+        <div class = "button-container">
             <button 
                 onClick={handleInfo} 
                 className={showInfo ? 'active' : ''}

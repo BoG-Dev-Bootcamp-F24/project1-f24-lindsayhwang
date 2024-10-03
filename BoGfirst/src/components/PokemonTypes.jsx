@@ -10,14 +10,14 @@ const TextColor = ({ text }) => {
 const PokemonTypes = ({pokemonData}) =>{
     return (
         pokemonData && (
-            <div className="pokemon-types">
+            <>
                 {pokemonData.types.map(typeInfo => (
                     <TextColor
                         key={typeInfo.type.name}
                         text={typeInfo.type.name}
                     />
                 ))}
-            </div>
+            </>
         )
     );
 };

@@ -1,0 +1,256 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem; 
+}
+
+.title {
+  text-align: center;  
+  margin-top: 4px;     
+  margin-bottom: 20px;  
+  color: white;
+  font-size: 72px;
+  background: linear-gradient(to right, red , blue);
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+  animation: glow 5s ease-in-out infinite alternate;
+    }
+    
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+      }
+      to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+      }
+}
+
+
+.container {
+  margin-bottom: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  margin-left: 0; 
+  display: flex;
+  justify-content: space-around; 
+  color: black;
+  padding: 20px;
+  align-items: flex-start;
+  height: 500px;
+}
+
+.pokemon-display {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  align-content: flex-end;
+  align-items: center; 
+  width: 40%; 
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-left:10px;
+  position: relative;
+}
+
+.panel-side {
+  display: flex;
+  flex-direction: column; 
+  align-content: flex-end;
+  justify-content: flex-start; 
+  width: 40%;
+  margin-left: 300px;
+  text-align: left;
+  position: relative;
+}
+
+.panel-side .panel-title{
+  text-align: center;
+  margin-bottom: 0px;
+  color: white;
+}
+
+.panel-data{
+  background-color: black;
+  color: white;
+  padding-left: 10px;
+  padding-top: 0px;
+  margin-left: 10px;  
+  margin-top: 5px;  
+  border-radius: 15px;  
+  border: 1px solid white;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #a2a2a2, 0 0 20px #787777, 0 0 25px #2c2c2c, 0 0 30px #1b1b1b, 0 0 35px #000000;
+  position: relative;
+}
+
+.container .pokemon-display img {
+  width: 350px; 
+  height: auto; 
+  border-radius: 10px;
+  border: 2px solid white;
+  padding: 0px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #a2a2a2, 0 0 20px #787777, 0 0 25px #2c2c2c, 0 0 30px #1b1b1b, 0 0 35px #000000;
+}
+
+.pokemon-display .pokemon-name {
+  border-radius: 10px; 
+  text-align: center; 
+  font-size: 15px;
+  border: 1px solid white; 
+  line-height: 4px;  
+  width: 350px;
+  height: auto; 
+  padding: 5px 0;
+  margin-bottom: 20px;
+  color: white;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #a2a2a2, 0 0 20px #787777, 0 0 25px #2c2c2c, 0 0 30px #1b1b1b, 0 0 35px #000000;
+
+}
+
+.pokemon-display .pokemon-type-title {
+  text-align: left; 
+  width: 100%; 
+  color: white;
+  margin-left: 20px;
+}
+
+.pokemon-display .type-container {
+  display: flex; 
+  flex-wrap: wrap; 
+  text-align: left; 
+  margin-right: auto;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.pokemon-display .type-name {
+  color: white;
+  padding: 0.2em 0.5em;
+  border-radius: 10px;
+  margin: 5px;
+  border: 1px solid white;
+  display: inline-flex; 
+  align-items: center; 
+}
+
+.pokemon-display .button-container {
+  display: flex; 
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+.button-container{
+  display: flex; 
+  justify-content: center; 
+  margin-top: 20px; 
+  gap: 10px; 
+}
+.button-container button {
+  margin: 0 10px; 
+  color: white;
+  padding: 10px 15px;
+  width: 100px;
+  border: 1px solid white;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #a2a2a2, 0 0 20px #787777, 0 0 25px #2c2c2c, 0 0 30px #1b1b1b, 0 0 35px #000000;
+}
+
+.button-container button:hover {
+  background-color: rgb(70, 70, 70);
+  color: white;
+}
+
+.infomoves-button {
+  display: flex;
+  justify-content: center;  
+  margin-top: 20px;
+}
+.infomoves-button button {
+  padding: 10px 20px;
+  font-size: 20 px;
+  border-radius: 5px; 
+  text-align: center;
+  border: 1px solid white;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #a2a2a2, 0 0 20px #787777, 0 0 25px #2c2c2c, 0 0 30px #1b1b1b, 0 0 35px #000000;
+  margin: 0 10px;  
+}
+
+.infomoves-button button.active {
+  background-color: rgb(129, 126, 126); 
+}
+
+.infomoves-button button:hover {
+  background-color: rgb(70, 70, 70);
+  color: white;
+} 
+.normal { 
+  background-color: #A8A77A; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #A8A77A, 0 0 20px #A8A77A, 0 0 25px #A8A77A, 0 0 30px #A8A77A, 0 0 35px #A8A77A;
+}
+.fire { 
+  background-color: #EE8130; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #EE8130, 0 0 20px #EE8130, 0 0 25px #EE8130, 0 0 30px #EE8130, 0 0 35px #EE8130;
+}
+.water { 
+  background-color: #6390F0; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #6390F0, 0 0 20px #6390F0, 0 0 25px #6390F0, 0 0 30px #6390F0, 0 0 35px #6390F0;
+}
+.electric { 
+  background-color: #F7D02C; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #F7D02C, 0 0 20px #F7D02C, 0 0 25px #F7D02C, 0 0 30px #F7D02C, 0 0 35px #F7D02C;
+}
+.grass { 
+  background-color: #7AC74C; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #7AC74C, 0 0 20px #7AC74C, 0 0 25px #7AC74C, 0 0 30px #7AC74C, 0 0 35px #7AC74C;
+}
+.ice { 
+  background-color: #96D9D6; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #96D9D6, 0 0 20px #96D9D6, 0 0 25px #96D9D6, 0 0 30px #96D9D6, 0 0 35px #96D9D6;
+}
+.fighting { 
+  background-color: #C22E28; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #C22E28, 0 0 20px #C22E28, 0 0 25px #C22E28, 0 0 30px #C22E28, 0 0 35px #C22E28;
+}
+.poison { 
+  background-color: #A33EA1; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #A33EA1, 0 0 20px #A33EA1, 0 0 25px #A33EA1, 0 0 30px #A33EA1, 0 0 35px #A33EA1;
+}
+.ground { 
+  background-color: #E2BF65; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #E2BF65, 0 0 20px #E2BF65, 0 0 25px #E2BF65, 0 0 30px #E2BF65, 0 0 35px #E2BF65;
+}
+.flying { 
+  background-color: #A98FF3; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #A98FF3, 0 0 20px #A98FF3, 0 0 25px #A98FF3, 0 0 30px #A98FF3, 0 0 35px #A98FF3;
+}
+.psychic { 
+  background-color: #F95587; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #F95587, 0 0 20px #F95587, 0 0 25px #F95587, 0 0 30px #F95587, 0 0 35px #F95587;
+}
+.bug { 
+  background-color: #A6B91A; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #A6B91A, 0 0 20px #A6B91A, 0 0 25px #A6B91A, 0 0 30px #A6B91A, 0 0 35px #A6B91A;
+}
+.rock { 
+  background-color: #B6A136; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #B6A136, 0 0 20px #B6A136, 0 0 25px #B6A136, 0 0 30px #B6A136, 0 0 35px #B6A136;
+}
+.ghost { 
+  background-color: #735797; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #735797, 0 0 20px #735797, 0 0 25px #735797, 0 0 30px #735797, 0 0 35px #735797;
+}
+.dragon { 
+  background-color: #6F35FC; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #6F35FC, 0 0 20px #6F35FC, 0 0 25px #6F35FC, 0 0 30px #6F35FC, 0 0 35px #6F35FC;
+}
+.dark { 
+  background-color: #705746; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #705746, 0 0 20px #705746, 0 0 25px #705746, 0 0 30px #705746, 0 0 35px #705746;
+}
+.steel { 
+  background-color: #B7B7CE; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #B7B7CE, 0 0 20px #B7B7CE, 0 0 25px #B7B7CE, 0 0 30px #B7B7CE, 0 0 35px #B7B7CE;
+}
+.fairy { 
+  background-color: #D685AD; 
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #D685AD, 0 0 20px #D685AD, 0 0 25px #D685AD, 0 0 30px #D685AD, 0 0 35px #D685AD;
+}

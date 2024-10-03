@@ -32,7 +32,12 @@ function App() {
         <div className="pokemon-display">
           <PokemonImage pokemonData={pokemonData}/>
           <PokemonName pokemonData={pokemonData}/>
-          <PokemonTypes pokemonData={pokemonData}/>
+          <div className= "pokemon-type-title">
+            Types: 
+          </div>
+          <div className = "type-container">
+            <PokemonTypes pokemonData={pokemonData}/>
+          </div>
           <PokemonButtons
             handleNext={handleNext}
             handlePrevious={handlePrevious}
