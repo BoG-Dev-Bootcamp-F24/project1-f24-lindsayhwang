@@ -6,8 +6,8 @@ const Panel = ({pokemonData, showInfo }) => {
         <div>
             {showInfo ? (
                     <>
-                    <p>Height: {pokemonData?.height/10.0}m</p>
-                    <p>Weight: {pokemonData?.weight/10.0}kg</p>
+                    <p>Height: {(pokemonData?.height/10.0).toFixed(1)}m</p>
+                    <p>Weight: {(pokemonData?.weight/10.0).toFixed(1)}kg</p>
                     <p>HP: {pokemonData?.stats.find(stat => stat.stat.name === 'hp')?.base_stat}</p>
                     <p>Attack: {pokemonData?.stats.find(stat => stat.stat.name === 'attack')?.base_stat}</p>
                     <p>Defense: {pokemonData?.stats.find(stat => stat.stat.name === 'defense')?.base_stat}</p>

@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 2rem; 
+  padding: 0 32px; 
 }
 
 .title {
@@ -9,14 +9,15 @@
   margin-top: 4px;     
   margin-bottom: 20px;  
   color: white;
-  font-size: 72px;
+  font-size: 60px;
+  font-family: courier;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
 }
 
 
 .container {
   margin-bottom: 10px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: courier;
   font-size: 20px;
   margin-left: 0; 
   display: flex;
@@ -24,6 +25,7 @@
   color: black;
   padding: 20px;
   align-items: flex-start;
+  margin-top:10px;
   height: 500px;
 }
 
@@ -31,8 +33,7 @@
   display: flex;
   flex-direction: column; 
   justify-content: flex-start;
-  align-content: flex-end;
-  align-items: center; 
+  align-content: flex-start;
   width: 40%; 
   margin-right: 20px;
   margin-top: 30px;
@@ -60,15 +61,16 @@
 .panel-data{
   background-color: black;
   color: white;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-top: 0px;
-  margin-left: 10px;  
-  margin-top: 5px;  
-  border-radius: 15px;  
+  margin-left: 20px;  
+  margin-top: 10px;  
+  border-radius: 10px;  
   border: 1px solid white;
   box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #a2a2a2, 0 0 20px #787777, 0 0 25px #2c2c2c, 0 0 30px #1b1b1b, 0 0 35px #000000;
   position: relative;
-  max-height: 400px;
+  max-height: 420px;
+  min-height: 420px;
   overflow-y: auto;  
 }
 
@@ -101,7 +103,6 @@
   text-align: left; 
   width: 100%; 
   color: white;
-  margin-left: 20px;
 }
 
 .pokemon-display .type-container {
@@ -110,7 +111,6 @@
   text-align: left; 
   margin-right: auto;
   margin-top: 5px;
-  margin-left: 5px;
 }
 
 .pokemon-display .type-name {
@@ -123,18 +123,13 @@
   align-items: center; 
 }
 
-.pokemon-display .button-container {
-  display: flex; 
-  justify-content: center; 
-  margin-top: 20px; 
-}
-
 .button-container{
   display: flex; 
   justify-content: center; 
   margin-top: 20px; 
   gap: 10px; 
 }
+
 .button-container button {
   margin: 0 10px; 
   color: white;
@@ -152,12 +147,12 @@
 .infomoves-button {
   display: flex;
   justify-content: center;  
-  margin-top: 60px;
+  margin-top: 55px;
 }
 .infomoves-button button {
   padding: 10px 20px;
   font-size: 20 px;
-  border-radius: 5px; 
+  border-radius: 10px; 
   text-align: center;
   border: 1px solid white;
   box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #a2a2a2, 0 0 20px #787777, 0 0 25px #2c2c2c, 0 0 30px #1b1b1b, 0 0 35px #000000;
