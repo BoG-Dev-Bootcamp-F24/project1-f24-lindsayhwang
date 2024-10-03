@@ -6,6 +6,7 @@ import PokemonName from './components/PokemonName';
 import InfoMovesButton from './components/InfoMovesButton';
 import Panel from './components/Panel';
 import PanelTitle from './components/PanelTitle';
+
 import './App.css';
 
 function App() {
